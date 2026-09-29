@@ -1,0 +1,24 @@
+# ignore all temporary MS Office files that exist while editing inside this git repo
+*~$*.xlsx
+*~$*.xls
+*~$*.docx
+*~$*.doc
+*~$*.pptx
+*~$*.ppt
+# do the same with open document type file endings
+*~*.odt
+*~*.ods
+*~*.odp
+*~*.odg
+*~*.odf
+
+# ignore everything in data/, except the README.md
+data/*
+!README.md
+# ignore everything in data_raw/, except the README.md
+data_raw/*
+!README.md
+# data_raw/!README.md  # this way does not work!
+
+# Once the `!` is left out, written files and folders are ignored, again
+file_to_ignore.txt
