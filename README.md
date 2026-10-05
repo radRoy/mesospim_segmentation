@@ -1,5 +1,7 @@
 # mesoSPIM Segmentation Pipeline
 
+The next TODO item is to use [snakemake] to chain together my existing mesospim segmentation workflow ([file_handling], [WaltherFiji], [imageProcessTif], [cloud], [bash_scripts]) into one functioning pipeline. First, I integrate these separate GitHub repositories (repos) into this [radRoy]/[mesospim_segmentation] as `git submodule`s. When the `snakemake` pipeline will have been tested to work, I want to merge the separate codebases by migrating their functionalities into this repo.
+
 ## Ordered Pipeline Workflow
 
 ### Overview & Data Flow
@@ -193,3 +195,14 @@
 > - **Cropping:** `crop_csv.ijm` taking coordinate inputs to extract specimen bounding boxes.
 > - **Labelling:** Heart and eye annotation macros (`label_tifs_heart-dataset*.ijm`, eye curation macros 1 to 5) for ground truth binary mask generation and slice-by-slice manual curation.
 > - **Analysis & Evaluation:** `IoU_prep_Otsu_threshold_series.ijm` and `probability_thresholding_(Label_prediction).ijm` for thresholding prediction stacks and evaluating segmentation quality against ground truth.
+
+
+[radRoy]: https://github.com/radRoy
+[mesospim_segmentation]: https://github.com/radRoy/mesospim_segmentation.git
+[file_handling]: https://github.com/radRoy/file_handling.git
+[WaltherFiji]: https://github.com/radRoy/WaltherFiji.git
+[imageProcessTif]: https://github.com/radRoy/imageProcessTif.git
+[cloud]: https://github.com/radRoy/cloud.git
+[bash_scripts]: https://github.com/radRoy/bash_scripts.git
+
+[snakemake]: https://snakemake.readthedocs.io/
