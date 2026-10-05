@@ -24,3 +24,4 @@ data_raw/*
 # file_to_ignore.txt
 .idea
 .venv
+*.venv
