@@ -23,3 +23,4 @@ data_raw/*
 # Once the `!` is left out, written files and folders are ignored, again
 # file_to_ignore.txt
 .idea
+.venv
