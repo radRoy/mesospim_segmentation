@@ -1,0 +1,12 @@
+[submodule "imageProcessTif"]
+	path = imageProcessTif
+	url = ./imageProcessTif
+[submodule "cloud"]
+	path = cloud
+	url = ./cloud
+[submodule "WaltherFiji"]
+	path = WaltherFiji
+	url = ./WaltherFiji/
+[submodule "file_handling"]
+	path = file_handling
+	url = ./file_handling/
