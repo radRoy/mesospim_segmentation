@@ -4,6 +4,8 @@
 
 The next TODO item is to use [snakemake] to chain together my existing mesospim segmentation workflow ([file_handling], [WaltherFiji], [imageProcessTif], [cloud], [bash_scripts]) into one functioning pipeline. First, I integrate these separate GitHub repositories (repos) into this [radRoy]/[mesospim_segmentation] as `git submodule`s. When the `snakemake` pipeline will have been tested to work, I want to merge the separate codebases by migrating their functionalities into this repo.
 
+note: for human sample images: [open-source brain MRI recordings on openneuro.org](https://openneuro.org/search/modality/mri?query=%7B%22modality_selected%22%3A%22mri%22%7D)
+
 ## Ordered Pipeline Workflow
 
 ### Overview & Data Flow
